@@ -1,0 +1,137 @@
+{
+    "config": {
+    	"target_name":{
+    		"help"  : "target board name",	
+	    	"value" : "NUCLEO_L476RG"
+    	},
+        "DEVICE_SERIAL_ASYNCH":0,
+        "DEVICE_I2C_ASYNCH":0,
+        "network-interface":{
+            "help": "options are ETHERNET, WIFI_ESP8266, WIFI_ODIN, WIFI_RTW, MESH_LOWPAN_ND, MESH_THREAD, CELLULAR_ONBOARD",
+            "value": "ETHERNET"
+        },
+        "mesh_radio_type": {
+            "help": "options are ATMEL, MCR20",
+            "value": "ATMEL"
+        },
+        "esp8266-tx": {
+            "help": "Pin used as TX (connects to ESP8266 RX)",
+            "value": "D1"
+        },
+        "esp8266-rx": {
+            "help": "Pin used as RX (connects to ESP8266 TX)",
+            "value": "D0"
+        },
+        "esp8266-ssid": {
+            "value": "\"SSID\""
+        },
+        "esp8266-password": {
+            "value": "\"Password\""
+        },
+        "esp8266-debug": {
+            "value": true
+        },
+		"sd_mosi": {
+            "value": "D1",
+			"macro_name": "SD_MOSI"
+		},
+		"sd_miso": {
+            "value": "D2",
+			"macro_name": "SD_MISO"
+		},
+		"sd_clk":  {
+            "value": "D3",
+			"macro_name": "SD_CLK"
+		},
+		"sd_cs": {
+            "value": "D4",
+			"macro_name": "SD_CS"
+		},
+        "lcd-mosi": {
+            "value": "D11",
+            "macro_name": "LCD_MOSI"
+        },
+        "lcd-sck": {
+            "value": "D13",
+            "macro_name": "LCD_SCK"
+        },
+        "lcd-miso": {
+            "value": "D12",
+            "macro_name": "LCD_MISO"
+        },
+        "lcd-a0": {
+            "value": "D7",
+            "macro_name": "LCD_A0"
+        },
+        "lcd-ncs": {
+            "value": "D10",
+            "macro_name": "LCD_NCS"
+        },
+        "lf_clock_rc_calib_timer_interval": {
+            "value": 16,
+            "macro_name": "MBED_CONF_NORDIC_NRF_LF_CLOCK_CALIB_TIMER_INTERVAL"
+        },
+        "lf_clock_rc_calib_mode_config": {
+            "value": 2,
+            "macro_name": "MBED_CONF_NORDIC_NRF_LF_CLOCK_CALIB_MODE_CONFIG"
+        },
+        "lf_clock_synth_accuracy": {
+            "value": "NRF_CLOCK_LF_SYNTH_ACCURACY_250_PPM",
+            "macro_name": "MBED_CONF_NORDIC_LF_CLOCK_XTAL_ACCURACY"
+        }
+    },
+    "target_overrides": {
+        "*": {
+            "target.features_add": ["NANOSTACK", "LOWPAN_ROUTER", "COMMON_PAL"],
+			"network-interface": "WIFI_ESP8266",
+            "platform.default-serial-baud-rate": 115200,
+            "platform.stdio-baud-rate": 115200,
+	        "esp8266-ssid": "\"Apple\"",
+	        "esp8266-password": "\"papa32525728sumipapa32525728sum\"",
+            "mbed-mesh-api.6lowpan-nd-channel-page": 0,
+            "mbed-mesh-api.6lowpan-nd-channel": 12,
+            "mbed-trace.enable": 0
+        },
+        "NRF52_DK": {
+	        "target_name" : "nRF52_DK",
+	        "DEVICE_SERIAL_ASYNCH":1,
+	        "DEVICE_I2C_ASYNCH":1,
+			"network-interface": "WIFI_ESP8266",
+            "sd_mosi": "p1",
+            "sd_miso": "p6",
+            "sd_clk":  "p0",
+            "sd_cs":   "p4",
+            "target.uart_hwfc": 0,
+            "esp8266-tx": "p8",
+            "esp8266-rx": "p5",
+            "target.lf_clock_src": "NRF_LF_SRC_RC"
+        },
+        "NUCLEO_F401RE": {
+	        "target_name" : "NUCLEO_F401RE"
+        },
+        "NUCLEO_F411RE": {
+	        "target_name" : "NUCLEO_F411RE"
+        },
+        "NUCLEO_F446RE": {
+	        "target_name" : "NUCLEO_F446RE",
+	        "DEVICE_SERIAL_ASYNCH":1,
+	        "DEVICE_I2C_ASYNCH":1,
+	      	"esp8266-tx": "PC_10",
+            "esp8266-rx": "PC_11",
+            "sd_mosi": "PC_3",
+            "sd_miso": "PC_2",
+            "sd_clk":  "PB_10",
+            "sd_cs":   "PB_12"
+        },
+        "NUCLEO_L476RG": {
+	        "DEVICE_SERIAL_ASYNCH":1,
+	        "DEVICE_I2C_ASYNCH":1,
+	      	"esp8266-tx": "PC_10",
+            "esp8266-rx": "PC_11",
+            "sd_mosi": "PC_3",
+            "sd_miso": "PC_2",
+            "sd_clk":  "PB_10",
+            "sd_cs":   "PB_12"
+        }
+    }
+}

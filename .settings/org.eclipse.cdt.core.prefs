@@ -1,0 +1,11 @@
+eclipse.preferences.version=1
+environment/project/ilg.gnuarmeclipse.managedbuild.cross.toolchain.base.395144005.1533386040/PATH/delimiter=\:
+environment/project/ilg.gnuarmeclipse.managedbuild.cross.toolchain.base.395144005.1533386040/PATH/operation=replace
+environment/project/ilg.gnuarmeclipse.managedbuild.cross.toolchain.base.395144005.1533386040/PATH/value=/usr/local/bin\:/Users/omiya/embed/gcc-arm/gcc-arm-none-eabi-6-2017-q2-update/bin\:/usr/bin\:/bin\:/usr/sbin\:/sbin
+environment/project/ilg.gnuarmeclipse.managedbuild.cross.toolchain.base.395144005.1533386040/append=true
+environment/project/ilg.gnuarmeclipse.managedbuild.cross.toolchain.base.395144005.1533386040/appendContributed=true
+environment/project/ilg.gnuarmeclipse.managedbuild.cross.toolchain.base.395144005/PATH/delimiter=\:
+environment/project/ilg.gnuarmeclipse.managedbuild.cross.toolchain.base.395144005/PATH/operation=replace
+environment/project/ilg.gnuarmeclipse.managedbuild.cross.toolchain.base.395144005/PATH/value=/usr/local/bin\:/Users/omiya/embed/gcc-arm/gcc-arm-none-eabi-6-2017-q2-update/bin\:/usr/bin\:/bin\:/usr/sbin\:/sbin
+environment/project/ilg.gnuarmeclipse.managedbuild.cross.toolchain.base.395144005/append=true
+environment/project/ilg.gnuarmeclipse.managedbuild.cross.toolchain.base.395144005/appendContributed=true

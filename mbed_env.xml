@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<cdtprojectproperties>
+<section name="org.eclipse.cdt.internal.ui.wizards.settingswizards.IncludePaths">
+<language name="Assembly Source File">
+<includepath>/Users/omiya/embed/gcc-arm/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include</includepath>
+
+</language>
+<language name="C Source File">
+<includepath>/Users/omiya/embed/gcc-arm/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include</includepath>
+
+</language>
+<language name="C++ Source File">
+<includepath>/Users/omiya/embed/gcc-arm/gcc-arm-none-eabi-6-2017-q2-update/arm-none-eabi/include</includepath>
+
+</language>
+<language name="Object File">
+
+</language>
+</section>
+<section name="org.eclipse.cdt.internal.ui.wizards.settingswizards.Macros">
+<language name="Assembly Source File">
+<macro>
+<name>DEVICE_SERIAL</name><value/>
+</macro>
+<macro>
+<name>DEVICE_SERIAL_ASYNCH</name><value/>
+</macro>
+<macro>
+<name>#DEVICE_I2C</name><value/>
+</macro>
+
+</language>
+<language name="C Source File">
+<macro>
+<name>DEVICE_SERIAL</name><value>1</value>
+</macro>
+<macro>
+<name>DEVICE_SERIAL_ASYNCH</name><value>1</value>
+</macro>
+<macro>
+<name>#DEVICE_I2C</name><value>1</value>
+</macro>
+
+</language>
+<language name="C++ Source File">
+<macro>
+<name>DEVICE_SERIAL</name><value>1</value>
+</macro>
+<macro>
+<name>DEVICE_SERIAL_ASYNCH</name><value>1</value>
+</macro>
+<macro>
+<name>#DEVICE_I2C</name><value>1</value>
+</macro>
+
+</language>
+<language name="Object File">
+
+</language>
+</section>
+</cdtprojectproperties>
